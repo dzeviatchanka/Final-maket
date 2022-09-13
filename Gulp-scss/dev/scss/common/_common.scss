@@ -1,0 +1,32 @@
+.title-text {
+    .title-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--blue);
+    }
+
+    .title-link:hover {
+        color: var(--pink);
+    }
+
+    .title-arrow {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: calc(46/38);
+        margin: 10px 0 0 0;
+    }
+}
+
+.gradient-red-text {
+    background:
+        linear-gradient(90.13deg,
+            #F0145A 0.84%,
+            #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

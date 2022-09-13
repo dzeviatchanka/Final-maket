@@ -1,0 +1,101 @@
+.company-principles-table {
+    // width: 75%;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    // margin: 0 auto;
+    padding: 0 120px 60px 120px;
+
+    @media (max-width:1439px) {
+        padding: 0 0 60px 0;
+    }
+
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 38px;
+        line-height: calc(46/38);
+        font-weight: bold;
+        padding-right: 60px;
+        border-right: 4px solid var(--color-border);
+
+        @media (max-width: 1023px) {
+            padding: 0;
+            flex-direction: row;
+            border-right: none;
+            border-bottom: 4px solid var(--color-border);
+            overflow-x: scroll;
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 768px) {
+            padding-top: 60px;
+        }
+    }
+
+
+    &__link {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 15px 0;
+
+        &:hover {
+            color: red;
+        }
+
+        &_active {
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            pointer-events: none;
+        }
+
+        @media (max-width: 1023px) {
+            width: max-content;
+            margin-right: 30px;
+            padding: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        font-size: 19px;
+        line-height: calc(30/19);
+        padding-left: 60px;
+        align-items: stretch;
+        line-height: 30px;
+
+        p,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+
+
+        @media (max-width: 1023px) {
+            padding: 0;
+            margin-top: 60px;
+        }
+
+    }
+}
